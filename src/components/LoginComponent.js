@@ -1,6 +1,7 @@
 import React, {useState, useContext} from 'react'
 import '../componentStylesheet/LoginComponent.css'
-import CircularProgress from '@mui/material/CircularProgress';
+
+import LoginPresentational from './LoginPresentational';
 import { UserContext } from './UserContext'
 
 
@@ -58,68 +59,7 @@ function LoginComponent({setCtoName, setCeoName, setCompanyName, }) {
     
     }
   return (
-    <div id="login-frame">
-        <div id='left-infographics'>
-            <img id='logo' alt='logo' src='./assets/MoneeyAppLogo.svg' />
-            <div className='top-text-infographics'>
-                <p className='bold-text'>Hi there, see what's new</p>
-                <p>Here’s how Foodcourt helps you manage your daily operations and ensure your riders are efficient</p>
-            </div>
-            <div id='options'>
-                <div className='option-items grey' id='option-1'>
-                    <img alt='icon' src='./assets/icon1.svg' className='option-img' />
-                    <div className='option-info'>
-                        <p className='option-header'>Monitor your Earnings</p>
-                        <p className='option-text'>Easily see how much your busineses are earning  on each transaction and watch your earnings rise.</p>
-                    </div>
-                </div>
-                <div className='option-items grey' id='option-2'>
-                    <img alt='icon' src='./assets/icon2.svg' className='option-img' />
-                    <div className='option-info'>
-                        <p className='option-header'>Manage your Businesses</p>
-                        <p className='option-text'>Easily see how much your businesses are earning  on each transaction and watch your earnings rise.</p>
-                    </div>
-                </div>
-                <div className='option-items' id='option-3'>
-                    <img alt='icon' src='./assets/icon3.svg' className='option-img' />
-                    <div className='option-info'>
-                        <p className='option-header'>Delegate to Staff</p>
-                        <p className='option-text'>Easily see how much your businesses are earning  on each transaction and watch your earnings rise. </p>
-                    </div>
-                    <img id='option-3-tick' alt='tick' src='./assets/tick-circle.svg'/>
-                </div>
-            </div>
-        </div>
-        <div id='dashboard-login-background'>
-            <div id='login-white-square'>
-                <div id='info-text'>
-                    <p className='info-text-sub-header'>Login to your dashboard</p>
-                    <p id='info-text-sub-info'>Provide details to login to your account</p>
-                </div>
-                <div id='input-fields'>
-                    <div class='input-field-container'>
-                    <label htmlFor='email-input'>Email</label>
-                    <input value={email} type="email" id='email-input' />
-                    </div>
-
-                    <div class='input-field-container'>
-                    <label htmlFor='password-input'>Password</label>
-                    <div>
-                        <input value={password} type="password" id='password-input' />
-                        <i class={eyeType} id="togglePassword" onClick={togglePasswordVisibility}></i>
-                        
-                    </div>
-                    
-                    </div>
-                    
-                </div>
-                <button disabled={isDisabled} id='login-button' onClick={loginAction}>{loggingIn ? <CircularProgress /> : "Login"}</button>
-
-
-            </div>
-
-        </div>
-    </div>
+    <LoginPresentational togglePasswordVisibility={togglePasswordVisibility} loginAction={loginAction} password={password} eyeType={eyeType} isDisabled={isDisabled} loggingIn={loggingIn} email={email} />
   )
 }
 
