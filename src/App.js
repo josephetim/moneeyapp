@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState,useEffect} from 'react';
+import LoginComponent from './components/LoginComponent';
+import ProfileComponent from './components/ProfileComponent';
+import { UserContext } from './components/UserContext';
 
 function App() {
+  const email = 'cokitchen222@gmail.com';
+  const password = 'cokitchen'
+  const [ceo, setCeo] = useState("")
+  const [cto, setCto] = useState("")
+  const [companyName, setCompanyName] = useState("")
+  const [isAuthenticated, setIsAuthenticated] = useState(true)
+  
+
+
+
+  if (ceo && cto && companyName && isAuthenticated) {
+    return <ProfileComponent ceoName={ceo} ctoName={cto} companyName={companyName} authenticated={setIsAuthenticated} />
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <UserContext.Provider value={{email, password}} >
+        <LoginComponent setCtoName={setCto} setCeoName={setCeo} setCompanyName={setCompanyName} />
+      </UserContext.Provider>
+    </>
   );
 }
 

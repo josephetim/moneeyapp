@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+#top-header {
+    width: 100%;
+    border: 0.7px solid #DCE2EA;
+    padding-left: 50px;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.no-bottom-margin {
+    margin-bottom: 0;
+}
+.no-top-margin {
+    margin-top: 0;
+}
+.align-items-center {
+    align-items: center;
+}
+#main-content {
+    padding: 56px 45px 0px 50px;
+    gap: 40px;
+    font-family: 'Manrope';
+}
+#company-info {
+    padding-top: 56px;
+    padding-left: 112px;
+    border: 1px solid #DDE1E3;
+    border-radius: 8px;
+    width: 65vw;
+}
+#coming-soon-and-notifications{
+    padding: 81px 24px 94px 24px;
+    background: #F7F7F7;
+    border-radius: 12px;
+    gap: 45px;
+    width: 375px;
+}
+#company-name-section {
+    gap: 24px;
+    margin-bottom: 48px;
+}
+#coming-soon-badge {
+    width: 141px;
+    height: 34px;
+}
+#new-features {
+    gap: 16px;
+    background: #FFFFFF;
+    border: 0.8px solid #EBEBEB;
+    border-radius: 10px;
+    padding: 20px 48px 20px 24px;
+}
+.feature-skeleton {
+    gap: 16px;
+}
+.title-designation {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    color: #858585;
+}
+#notification-info{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #595959;
+}
+#notification-header {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: -0.2px;
+    color: #1A1A1A;
+}

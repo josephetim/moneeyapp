@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+#login-frame {
+    font-family: 'Manrope';
+    
+    background-color: #FEF0F2;
+}
+.bold-text {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 0;
+}
+.top-text-infographics {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    width: 90%;
+    
+}
+#logo{ 
+    width: 84px;
+    height: 84px;
+}
+
+#login-frame{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+#left-infographics {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    padding-top: 40px;
+    padding-bottom: 120px;
+    background-color: white;
+    padding-left: 80px;
+    
+}
+#options{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+.option-img {
+    width: 65px;
+    height: 65px;
+}
+.option-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 400px;
+}
+.option-header{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 0;
+}
+.option-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 0;
+}
+.option-info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+#option-3 {
+    background: #F8F8F6;
+    border-radius: 20px;
+    width: 450px;
+    padding-left: 10px;
+    padding-right: 16px;
+}
+.grey {
+    color: #A3A3A3;
+}
+#dashboard-login-background {
+    background-color: #FEF0F2;
+    padding: 143px 93px 0 93px;
+
+}
+#login-white-square{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 64px ;
+    gap: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(102, 102, 102, 0.2);
+    border-radius: 12px;
+}
+#input-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+#togglePassword {
+    margin-left: -30px;
+    cursor: pointer;
+}
+#password-input {
+    font-family: Verdana;
+    letter-spacing: -7px;
+    font-size: 30px;
+}
+#email-input {
+    font-size: 20px;
+    font-family: 'Manrope';
+    font-weight: lighter;
+}
+.input-field-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+}
+.info-text-sub-header{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+    margin-bottom: 0;
+}
+#info-text-sub-info{
+    color: #858585;
+    margin-top: 0;
+}
+.input-field-container input{
+    width: 400px;
+    height: 40px;
+    border: 1px solid #1A1A1A;
+    border-radius: 8px;
+}
+#login-button {
+    width: 400px;
+    height: 65px;
+    background: #1CC578;
+    border-radius: 40px;
+    margin-top: 30px;
+    color: white;
+    font-size: 16px;
+    line-height: 25px;
+    cursor: pointer;
+}
+#login-button:disabled{
+    background: #858585;
+    cursor: not-allowed;
+}
